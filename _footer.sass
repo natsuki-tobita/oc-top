@@ -1,0 +1,162 @@
+.v2-footer
+  background: $v2-main-color
+  clear: both
+  box-sizing: border-box
+  padding: 56px 0 48px
+  position: relative
+  z-index: 100
+  +clearfix
+  @media screen and (max-width: #{$screen-sm})
+    padding-top: 0
+    padding-bottom: 0
+    height: auto
+.v2-footer__mobile-about
+  display: none
+  @media screen and (max-width: #{$screen-sm})
+    display: block
+    margin: 20px 10px
+.v2-footer__mobile-about-title
+  opacity: 0.8
+  font-weight: 600
+  font-size: 14px
+  text-align: center
+  color: $v2-text-light-gray
+  margin-bottom: 8px
+.v2-footer__mobile-about-body
+  font-size: 10px
+  line-height: 1.8
+  text-align: center
+  color: $v2-text-sub-color
+  margin-bottom: 16px
+.v2-footer__mobile-links
+  margin: 16px 10px 24px
+  padding: 16px 4px 0
+  border-top: 1px solid #032442
+  +clearfix
+  li
+    float: left
+    display: block
+    width: 50%
+    margin: 8px 0
+    &:first-child
+      width: 100%
+  a
+    opacity: 0.8
+    font-weight: 400
+    font-size: 13px
+    color: $v2-text-sub-color
+
+.v2-footer__sitemap-title
+  font-weight: 600
+  font-size: 14px
+  line-height: 1.4
+  color: $v2-text-gray
+  margin-bottom: 8px
+.v2-footer__sitemap-links
+  word-break: break-word
+  font-size: 12px
+  line-height: 1.8
+  a
+    color: $v2-text-gray
+
+.v2-footer__links
+  background: $v2-dark-navy-blue
+  text-align: center
+  li
+    color: $white
+    display: inline
+    margin-right: 12px
+    line-height: 63px
+    &:after
+      content: '|'
+      margin-left: 12px
+    &:last-child:after
+      display: none
+  a
+    font-size: 13px
+    color: $v2-text-gray
+  +media-mobile
+    height: 40px
+.v2-footer__copyright
+  background: $v2-dark-navy-blue
+  color: $white
+  line-height: 63px
+  text-align: center
+  font-family: Roboto
+  font-size: 11px
+  color: $v2-text-sub-color
+  +media-mobile
+    background: $v2-dark-navy-blue
+    height: 40px
+    font-size: 10px
+    opacity: 0.5
+    color: white
+    line-height: 40px
+
+.mobile-footer-to-top
+  background-color: $v2-tag-background-color
+  text-align: center
+  padding: 20px 0
+  font-size: 13px
+  a
+    color: $v2-text-gray
+  i
+    font-size: 18px
+
+.v2-sign-up-footer
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 200 // フッターより手前に表示
+  position: fixed
+  padding: 12px
+  background-color: #4990e2
+  @media screen and (max-width: #{$screen-sm})
+    flex-wrap: wrap
+
+.v2-sign-up-footer__description
+  display: inline-block
+  margin-right: 48px
+  font-size: 15px
+  font-weight: 300
+  line-height: 32px
+  color: white
+  text-align: center
+  +media-mobile
+    margin: 0 0 8px
+    width: 100%
+
+$_sign-up-footer-button-color: white
+.v2-sign-up-footer__link
+  margin-left: 0
+  display: inline-block
+  width: 222px
+  height: 32px
+  line-height: 30px
+  border-radius: 2px
+  background-color: $_sign-up-footer-button-color
+  border: solid 1px $v2-link-color
+  font-size: 12px
+  font-weight: 300
+  text-align: center
+  +v2-link-color
+  &:hover, &:focus
+    background-color: darken($_sign-up-footer-button-color, 5%)
+    text-decoration: none
+  +media-mobile
+    margin: 0
+
+.v2-sign-up-footer__close
+  position: absolute
+  right: 11px
+  > a
+    display: block
+    padding: 5px
+    line-height: 1
+  @media screen and (max-width: #{$break-point})
+    position: absolute
+    top: 0
+    display: block
+    right: 0
+    text-align: center
+    padding: 8px

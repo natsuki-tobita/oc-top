@@ -1,0 +1,428 @@
+.v2-home-index
+  background-color: #f0f1f2
+
+#body.v2-content-home-index
+  margin-top: 32px
+  margin-bottom: 0
+  @media screen and (max-width: #{$screen-sm})
+    margin-top: 0
+    margin-bottom: 0
+
+.v2-home-index-pickup-companies__container
+  padding: 32px 0
+  background-color: white
+
+.v2-home-index-pickup-companies
+  margin: 0 auto
+  width: 1020px
+
+.v2-home-index-pickup-companies__wrapper
+  display: flex
+
+.v2-home-index-pickup-companies__title
+  margin: 0 0 10px
+  font-size: 20px
+  color: $v2-main-color
+
+.v2-home-index-pickup-companies__link
+  float: right
+  margin-top: 3px
+  font-size: 14px
+  line-height: 16px
+  a
+    color: $v2-link-color
+  img
+    height: 16px
+    margin-left: 4px
+
+.v2-home-index-pick-company__link
+  position: relative
+  display: inline-block
+  width: 246px
+  height: 238px
+  margin-right: 12px
+  box-shadow: 0 2px 4px 0 #dbdce0
+  border-radius: 2px
+  overflow: hidden
+  &:last-child
+    margin-right: 0
+  +media-mobile
+    display: block
+    margin-bottom: 20px
+    &:last-child
+      margin-right: 12px
+
+.v2-home-index-pick-company__head-image
+  width: 246px
+  height: 156px
+
+.v2-home-index-pick-company__square-logo
+  position: absolute
+  top: 122px
+  right: 12px
+  float: right
+  width: 58px
+  height: 58px
+  border: 1px solid $v2-border-light-gray
+  border-radius: 2px
+  line-height: 58px
+
+.v2-home-index-pick-company__info
+  padding: 8px 12px
+
+.v2-home-index-pick-company__business-field
+  margin-bottom: 4px
+  font-size: 12px
+  color: $v2-text-sub-color
+
+.v2-home-index-pick-company__name
+  font-size: 14px
+  font-weight: bold
+  color: $v2-main-color
+
+.v2-home-index-recommend-companies__container
+  padding: 20px 0
+  background-color: #f7f8f8
+  @media screen and (max-width: #{$screen-sm})
+    padding: 26px 12px 32px
+    background-color: white
+.v2-home-index-recommend-companies
+  overflow: inherit
+  @media screen and (max-width: #{$screen-sm})
+    overflow: scroll
+    -webkit-overflow-scrolling: touch
+.v2-home-index-recommend-companies__title
+  margin: 0 0 16px
+  font-size: 18px
+  color: $v2-main-color
+.v2-home-index-recommend-companies__body
+  margin: 0 auto
+  width: 1020px
+  +media-mobile
+    white-space: nowrap
+
+.v2-home-index-recommend-company__link
+  width: 74px
+  height: 74px
+  @media screen and (max-width: #{$screen-sm})
+    width: 86px
+    height: 86px
+  display: inline-block
+  vertical-align: top
+  margin-right: 12px
+  background-color: #fff
+  border-radius: 2px
+  box-shadow: 0 2px 4px 0 rgba(219, 220, 224, 0.5)
+  &:last-child
+    margin-right: 0
+  @media screen and (max-width: #{$screen-sm})
+    margin-right: 8px
+    box-shadow: none
+    border: solid 1px $v2-border-color
+
+.v2-home-index-recommend-company__square-logo
+  width: 74px
+  height: 74px
+  max-width: 100%
+  max-height: 100%
+  @media screen and (max-width: #{$screen-sm})
+    width: 86px
+    height: 86px
+
+.v2-home-index-search-companies__title
+  margin: 0 0 16px
+  font-size: 20px
+  color: $v2-main-color
+  @media screen and (max-width: #{$screen-sm})
+    font-size: 18px
+    color: white
+
+.v2-home-index-search-companies__description
+  @media screen and (max-width: #{$screen-sm})
+    margin-bottom: 16px
+    font-size: 12px
+    line-height: 18px
+
+.v2-home-index-search-companies__link
+  @media screen and (max-width: #{$screen-sm})
+    display: block
+    padding: 15px 0
+    text-align: center
+    font-size: 14px
+    color: white
+    border-radius: 2px
+    background-color: $v2-link-color
+
+.v2-home-index-search-events__title
+  margin: 0 0 16px
+  font-size: 20px
+  color: $v2-main-color
+  @media screen and (max-width: #{$screen-sm})
+    font-size: 18px
+
+.v2-home-index-search-companies
+  width: 680px
+  margin-bottom: 16px
+  background-color: white
+  border: solid 4px #e6e8e9
+  border-radius: 4px
+  @media screen and (max-width: #{$screen-sm})
+    width: auto
+    margin: 0 -16px 24px
+    padding: 24px 16px
+    color: white
+    background-color: $v2-main-color
+    border: none
+    border-radius: 0
+
+.v2-home-index-search-companies__caption
+  margin: 0
+  padding: 10px 0
+  text-align: center
+  font-size: 15px
+  color: white
+  line-height: 22px
+  background-color: $v2-main-color
+
+.v2-home-index-search-companies__body
+  padding: 24px
+
+.v2-home-search-company-input
+  height: 40px
+  margin-bottom: 16px
+
+.v2-home-index-search-business-fields
+  margin: 0
+  padding: 0
+  @media screen and (max-width: #{$screen-sm})
+    margin-right: -6px
+
+.v2-home-index-search-business-field
+  word-break: break-word
+  display: inline-block
+  width: 204px
+  margin-bottom: 8px
+  &:last-child
+    margin-bottom: 0
+  @media screen and (max-width: #{$screen-sm})
+    display: block
+    margin: 0
+    width: 100%
+    border-bottom: 1px solid $v2-header-border-color
+
+.v2-home-index-search-business-field-link
+  display: block
+  font-size: 13px
+  color: $v2-link-color
+  @media screen and (max-width: #{$screen-sm})
+    padding: 14px 0 13px
+    font-size: 14px
+    color: $v2-main-color
+
+.v2-home-index-search-business-field-link__arrow
+  display: none
+  float: right
+  margin-right: 16px
+  @media screen and (max-width: #{$screen-sm})
+    display: inline-block
+
+.v2-home-index-search-business-fields__container
+  padding: 24px 0 0
+
+.v2-home-index-search-business-fields__title
+  @media screen and (max-width: #{$screen-sm})
+    margin: 0 0 16px
+    font-size: 18px
+    color: $v2-main-color
+
+.v2-home-index-links
+  text-align: right
+  font-size: 14px
+  line-height: 16px
+  a
+    color: $v2-link-color
+  img
+    height: 16px
+    margin-left: 4px
+
+.v2-home-index-hr
+  margin: 32px 0
+  height: 1px
+  background-color: #90a7b6
+
+.v2-home-index-event-categories
+  margin-bottom: 36px
+
+.v2-home-index-event-category__link
+  display: inline-block
+  margin-right: 13px
+  padding: 24px 0
+  width: 218px
+  height: 173px
+  text-align: center
+  font-size: 16px
+  color: $v2-water-blue
+  border-radius: 2px
+  box-shadow: 0 2px 4px 0 $v2-border-color
+  background-color: white
+  @media screen and (max-width: #{$screen-sm})
+    width: 32%
+    height: 112px
+    margin: 0 4px 0 0
+    padding: 8px 0
+    font-size: 12px
+  strong
+    font-weight: normal
+    color: $v2-water-blue
+    @media screen and (max-width: #{$screen-sm})
+      display: block
+      font-size: 15px
+      font-weight: bold
+  &:hover
+    color: $v2-water-blue
+  &:last-child
+    margin-right: 0
+
+.v2-home-index-event-category__icon
+  width: 92px
+  height: 92px
+  margin: 0 auto 10px
+  @media screen and (max-width: #{$screen-sm})
+    width: 52px
+    height: 52px
+    margin: 0 auto 3px
+  img
+    width: 92px
+    height: auto
+    @media screen and (max-width: #{$screen-sm})
+      width: 52px
+
+.v2-home-index-events
+  margin-bottom: 44px
+  @media screen and (max-width: #{$screen-sm})
+    margin-bottom: 28px
+    &:last-child
+      margin-bottom: 40px
+
+.v2-home-index-events__sub-title
+  position: relative
+  margin: 0 0 13px
+  font-size: 15px
+  line-height: 20px
+  color: $v2-main-color
+
+.v2-home-index-events__sub-title-icon
+  display: inline-block
+  margin-right: 6px
+  img
+    width: auto
+    height: 20px
+
+.v2-home-index-events-link
+  float: right
+  position: absolute
+  right: 0
+  bottom: 0
+  +media-mobile
+    bottom: 2px
+
+.v2-home-index-ad-top-320
+  display: none
+  @media screen and (max-width: #{374px})
+    display: block
+    background-color: #fff
+.v2-home-index-ad-top-375
+  display: block
+  background-color: #fff
+  @media screen and (max-width: #{374px})
+    display: none
+
+.v2-home-index-ad-middle
+  @media screen and (max-width: #{$screen-sm})
+    margin: 0 -16px
+    padding: 20px 0
+    background-color: $v2-border-color
+
+.v2-home-index-ad-bottom
+  margin: 64px 0
+  @media screen and (max-width: #{$screen-sm})
+    margin: 0 -16px
+    padding: 20px 0
+    background-color: $v2-border-color
+
+.v2-home-index-search-form
+  padding: 12px 10px
+  background-color: $v2-tag-background-color
+
+.v2-home-index-search-form__button
+  color: white
+  background-color: $v2-link-color
+  line-height: 26px
+  i.fa-search
+    margin: 0
+    font-size: 16px
+
+.v2-home-index-search-form__keyword
+  height: 40px
+  font-family: FontAwesome
+  font-style: normal
+  font-weight: normal
+  text-decoration: inherit
+
+.v2-sp-global-search-modal-menu
+  +reset-ul
+  +mobile-full-width
+  margin-top: 6px
+  border-top: 1px solid $v2-border-color
+
+.v2-sp-global-search-modal-menu__item
+  position: relative
+  padding: 0 16px
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    right: 16px
+    top: 14px
+    width: 9px
+    height: 16px
+    background-size: 100% 100%
+    background-image: image-url('v2/icon-pc-arrow-next-glay@2x.png')
+  border-bottom: 1px solid $v2-border-color
+
+.v2-sp-global-search-modal-menu__item-link
+  display: block
+  font-size: 13px
+  line-height: 1.7
+  padding: 10px 8px 8px 16px
+  +v2-link-color
+  display: block
+  padding: 12px 16px 12px 0
+  font-size: 14px
+  line-height: 1.4
+  color: $v2-main-color
+  &:hover, &:focus
+    color: $v2-main-color
+
+.v2-home-sign-in-buttons
+  display: flex
+  margin: 12px 12px 0
+
+.v2-home-sign-in-buttons__sign-in
+  flex: 0 1 50%
+  +_v2-button-base($v2-link-color, $v2-text-white, 44px, 44px, 14px, 14px)
+  border: solid 1px $v2-header-border-color
+
+.v2-home-sign-in-buttons__sign-up
+  flex: 0 1 50%
+  +_v2-button-primary(44px, 44px, 14px, 14px)
+  margin-left: 12px
+.v2-home-sign-in-buttons__free
+  display: inline-block
+  padding: 0 10px
+  background-color: white
+  border-radius: 2px
+  font-weight: bold
+  font-size: 12px
+  line-height: 20px
+  +v2-link-color
